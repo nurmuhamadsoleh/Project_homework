@@ -8,6 +8,7 @@
     list-style-type: none;
     font-weight: bold;
     cursor: pointer;
+    
 }
 .nav-item:hover{
     background-color: white;
@@ -65,6 +66,28 @@ ol.carousel-indicators li {
     right: -130px;	
     top: 50%;
 }
+
+/* Icon */
+/* ul li a.icon img {
+   margin-top: 10px;
+   color: blueviolet;
+   padding-left: 10px;
+}
+ul li img{
+    /* background-color: brown; */
+    color: brown;
+} */
+ul li a span {
+    position:absolute;
+    top:-63px;
+    right: 20px;
+}
+
+ul li span {
+    color: blueviolet;
+    padding-top: 78px;
+    top: 20px;
+} 
 /* Overlay */
 .card span {
     display: block;
