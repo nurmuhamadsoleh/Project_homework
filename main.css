@@ -126,7 +126,9 @@ form.example::after {
     clear: both;
     display: table;
 }
-
+.search{
+    padding-bottom: 30px;
+}
 /* Overlay */
 
 .card span {
