@@ -105,8 +105,8 @@
     <h1><strong>LATEST NEWS</strong></h1>
   </div>
   <!-- searchbar -->
-  <div class="search">
-    <form class="example" style="margin: auto; max-width: 600px;" action="action_page.php">
+  <div class="search-kompetisi">
+    <form class="example" style="margin: auto; max-width: 600px;">
       <input type="text" placeholder="Cari nama liga" name="search">
       <button type="submit"><i class="fa fa-search"></i></button>
     </form>
@@ -158,6 +158,18 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
     crossorigin="anonymous"></script>
+
+    <script>
+      $.ajax({
+        headers: { 'X-Auth-Token': '7e1ead3576ba4c728e95901a4964bbb0' },
+        url: 'http://api.football-data.org/v2/competitions/',
+    dataType: 'json',
+        type: 'GET',
+      }).done(function (response) {
+        // do something with the response, e.g. isolate the id of a linked resource   
+        console.log(response);
+      });
+    </script>
 </body>
 
 </html>
