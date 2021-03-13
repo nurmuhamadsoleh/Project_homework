@@ -1,4 +1,8 @@
 # Project_homework
+Anggota Kelompok yang ikut contributors  :
+1. Nur Muhamad Soleh ( Front end )
+2. Kahfie Nuriakusumah ( Back end )
+
 Link Akses Website Project HomeWork ---> https://nurmuhamadsoleh.github.io/Project_homework/ Atau https://project_homework.surge.sh
 Bisa cek Link di bawah ini Database Contact Forms ---> https://docs.google.com/spreadsheets/d/1U-Vlc6eHEhYv955UemVXJOI33uvs0JnlArrABggc2RU/edit?usp=sharing
 
