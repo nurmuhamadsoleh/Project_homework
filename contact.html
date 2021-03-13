@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link rel="stylesheet" href="./contact.css">
+      <link rel="stylesheet" href="./fontawesome-free/css/all.min.css">
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+      <link rel="shortcut icon" href="./bola.jpg" type="image/x-icon">
+      <title>Hubungi Kami</title>
+</head>
+<body id="page-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top" id="mainNav">
+        <div class="container">
+          <a class="navbar-brand font-weight-bold text-info" href="page-top">
+            <img src="./bola.jpg" width="30" height="30" class="d-inline-block align-top" alt="Bola">
+            Foot Ball
+          </a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item hover">
+              <a class="nav-link font-weight-bold text-info" href="./index.html">News<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link font-weight-bold text-info" href="./support.html">Supports</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link font-weight-bold text-info" href="./contact.html">Hubungi Kami</a>
+            </li>
+            <li>
+              <i class="fas fa-1x fa-phone-alt text-primary mt-2"><a href="https://wa.me/6289608046965"><span>+6289608046965</span></a></i>
+            </li>
+          </ul>
+        </div>
+        </div>
+      </nav>
+      
+    <p class="paragraf">Kamu Punya Pertanyaan???.....</p>
+    <h3>Segera Hubungi Kami</h3>
+        <section id="contact" class="contact">
+            <div class="row justify-content-center mt-5">
+                <div class="col-lg-4 text-center ml-lg-5">
+                    <div class="card text-white bg-primary mb-3">
+                        <div class="card-body">
+                          <h5 class="card-title">Contact US</h5>
+                          <p class="card-text">Sebuah platfrom yang yang membahas pertandingan bola & News Jadwal Pertandingan</p>
+                        </div>
+                    </div>
+                    <ul class="list-group">
+                        <li class="list-group-item active" aria-current="true">Location</li>
+                        <li class="list-group-item">My Office</li>
+                        <li class="list-group-item">Satrio Tower 6th Floor, Unit 1, Jl. Mega Kuningan Tim. Jl. Prof. DR. Satrio No.C4, RT.7/RW.2</li>
+                        <li class="list-group-item">Kuningan, Kuningan Tim., Kecamatan Setiabudi, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12950</li>
+                      </ul>
+                </div>
+                <div class="col-lg-6">
+                      <div class="alert alert-success d-none my-alert" role="alert">
+                        <strong>Sukses!</strong> Data Berhasil Disimpan
+                      </div>
+                    <form name="Contact-Form">
+                        <div class="form-group">
+                            <label for="nama">Nama Lengkap</label>
+                            <input type="text" class="form-control" id="nama" name="nama" placeholder="Masukan Nama Lengkap">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Alamat Email</label>
+                            <input type="text" class="form-control" id="email" name="email" placeholder="Masukan email Anda">
+                        </div>
+                        <div class="form-group">
+                            <label for="telp">No.Telp</label>
+                            <input type="tel" class="form-control" id="telp" name="telp" placeholder="Masukan No.Tlpn Anda">
+                        </div>
+                        <div class="form-group">
+                            <label for="pesan">Pesan</label>
+                            <textarea name="pesan" id="pesan" class="form-control"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary btn-kirim">kirim pesan</button>
+                            <button class="btn btn-primary btn-loading d-none" type="button" disabled>
+                            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                                Loading...
+                            </button>
+                        </div>
+                      </form>
+                </div>
+            </div>
+        </section>
+        <div class="footer">
+            <p>Copyright&copy; Footbal</p>
+          </div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+      <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbw4vZLuQEwjTPfqrRBcgrbjfmYfZ6zEi9Cgm2KbxjEmxU8xc5DrOfeWRsNUZG-wav5PiQ/exec'
+        const form = document.forms['Contact-Form'];
+        const btnKirim = document.querySelector('.btn-kirim');
+        const btnLoading = document.querySelector('.btn-loading');
+        const myAlert = document.querySelector('.my-alert');
+    
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+        //   Ketika tombol submit di klik
+        // Tampilkan tombol loading, hilangkan tombol kirim
+        btnLoading.classList.toggle('d-none');
+        btnKirim.classList.toggle('d-none');
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                // Tampilkan tombol kirim, hilangkan tombol loading
+                btnLoading.classList.toggle('d-none');
+                btnKirim.classList.toggle('d-none');
+                // Tampilkan Alert
+                myAlert.classList.toggle('d-none');
+                // Reset Form
+                form.reset();
+                console.log('Success!', response)
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>

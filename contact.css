@@ -1,0 +1,44 @@
+body{
+    background-color: rgb(183, 183, 238);
+}
+p.paragraf{
+    padding-top: 60px;
+    text-align: center;
+    font-size: 32px;
+}
+h2.heading{
+    text-align: center;
+}
+h3{
+    text-align: center;
+    font-weight: bold;
+}
+/* Navbar */
+.navbar-nav {
+    display: flex;
+    list-style-type: none;
+    font-weight: bold;
+    cursor: pointer;
+    
+}
+.nav-item:hover{
+    background-color: white;
+    width: 200px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 90px;
+}
+/* Akhir Navbar */
+.footer{
+    height: 60px;
+    width: 100%;
+    background-color: rgb(48, 46, 45);
+}
+.footer p {
+    text-align: center;
+    line-height: 60px;
+    color: black;
+    font-weight: bold;
+}
